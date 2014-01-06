@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/* Responsive Setup */
+
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+html{
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+/* CSS */
+
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color:#efece4;
+}
+
+h1, 
+h2,
+.copyright{
+	font-family: Arial, Helvetica, sans-serif;
+	width: 90%;
+	margin: 1rem auto;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 28px;
+}
+
+h2 {
+	font-size: 20px;
+	text-align: center;
+}
+
+img{
+	width: 100%;
+	border: 1px solid #000;
+}
+
+.main{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	width: 90%;
+	margin: 1rem auto;
+	text-align: justify;
+}
+
+stong{
+	font-weight: bold;
+}
+
+
+.first{
+	text-align: center;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+.prices {
+	text-align:center;
+	padding: 1rem 0;
+}
+
+
+.hide-text{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* Navigation Styles */
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited{
+	display: block;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 10px;
+	right: 5%;
+	background: white url('../images/nav-icon.svg') no-repeat center center;	
+}
+
+.nav a, 
+.nav a:link,
+.nav a:visited{
+	display:block;
+	background-color: #a8a497;
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+	padding: 1rem;
+	border-top: 1px solid #efece4;
+	text-transform: uppercase;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a active{
+	background-color: #333;
+}
+
+.nav-top{
+	display: none;
+}
+
+.nav-top[data-state="expanded"]{
+	display: block;
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 25em) {
+	
+	.nav{
+		overflow: auto;   /* spaces copyright from nav */
+	}
+	
+	.nav li{
+		float: left;
+		width: 33.3%;
+	}
+	
+	.nav-btn,
+	.nav-btn:link,
+	.nav-btn:visited{
+		display: none;
+	}
+	
+	.nav-top{
+		display: block;
+	}
+
+}
+
+@media only screen and (min-width: 35em) {
+	
+	.nav{
+		background-color: #000;
+		text-align: center;
+	}
+	
+	.nav li{
+		display: inline-block;
+		float: none;
+		margin: 0;
+		width: auto;
+	} 
+	
+	.nav a, 
+	.nav a:link,
+	.nav a:visited{
+		border-top: 0;
+	}
+	
+	.nav-top{
+		float: right;
+		margin-right: 5%;
+	}
+	
+	h1{
+		float: left;
+		width: auto;
+		margin-left: 5%;
+	}
+	
+	header{
+		overflow: auto;
+	}
+}
+
+p {
+	line-height: 1.5rem;
+}
+
+table {
+  	table-layout: fixed; 
+}
+
+td, th {
+	vertical-align: top;
+	border-top: 1px solid #ccc;
+ 	padding: 10px;
+ 	width: 100px;
+ 	text-align: left;
+ 	font-family: Arial, Helvetica, sans-serif;
+  	font-size: 14px;
+}
+
+th {
+  	position: absolute;
+  	left: 0; 
+  	width: 100px;
+  	font-weight: bold;
+	padding-bottom: 100px;
+	overflow: hidden;
+	border-right: 3px solid #ccc;
+}
+
+.last{
+	padding-bottom: 53px;
+	border-bottom: 3px solid #ccc;
+}
+
+.days {
+	font-weight: bold;
+}
+
+.outer {position:relative}
+.inner {
+	overflow-x:scroll;
+	overflow-y:visible;
+  	width:125px; 
+  	margin-left:100px;
+	border-bottom: 3px solid #ccc;
+
+}
+
+.outer{
+
+}
+
+.hours-pdf{
+	width: 100%;
+	display: none;
+}
+
+
+@media only screen and (min-width: 25em){
+	
+	.hours-pdf{
+		display: inherit;
+	}
+}
+
+footer{
+	display: block;
+	background-color: #a8a497;
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+	padding: 1rem;
+}
+
+
+
+/* divide witdh by 16 to get size */
